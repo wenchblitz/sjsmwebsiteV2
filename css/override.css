@@ -1,0 +1,424 @@
+/*
+ *  
+ * Overriding Default CSS 
+ * 
+ */
+
+ htmt, body
+ {
+     cursor: auto;
+ }
+
+/*=======bxSlider=======*/  
+    .bx-wrapper 
+    {
+        border: 0 !important;
+        -moz-box-shadow: 0 0 0 #ccc !important;
+        -webkit-box-shadow: 0 0 0 #ccc !important;
+        box-shadow: 0 0 0 #ccc !important;
+        background: transparent !important;
+    }
+
+    div.bx-wrapper
+    {
+        margin-bottom: 0 !important;
+    }
+
+    .bx-wrapper .bx-pager, 
+    .bx-wrapper .bx-controls-auto 
+    {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    } 
+/*============================*/
+
+    /*border-left: thin solid green;
+    border-right: thin solid green;*/
+
+/*=== Navbar ===*/
+@media (min-width: 768px){
+    .navbar-nav > li > a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+/*============= GLOBAL BLOG PAGE STYLES ===========*/
+
+#page-bg .page-header,
+#blog-bg .page-header
+{
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.screen-reader-text {
+    display: none !important;
+}
+
+article#post-8 figure.wp-caption {
+	margin: 0 auto;
+}
+
+/*============= !GLOBAL BLOG PAGE STYLES ==========*/      
+
+/*=== change hover state ===*/
+nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.active a {
+  background: transparent !important;
+
+  color: #efea67;/*yellow*/
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s; 
+}
+
+.nav > li > a 
+{
+    padding-left: 9px; /* 13px */
+    padding-right: 9px; /* 13px */
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;        
+}
+
+.home-nav .nav > li > a 
+{
+    padding-left: 10px; /* 13px */
+    padding-right: 10px; /* 13px */
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;    
+}
+
+/*==Owl Carousel Nav Buttons==*/
+.owl-nav
+{
+    position: relative;
+}
+
+.owl-prev,
+.owl-next 
+{
+    display: inline-block !important;
+}
+
+.owl-prev 
+{
+    left: 0;
+}
+
+.owl-next 
+{
+    right: 0;
+}
+
+/*== google maps ==*/
+.gm-style-pbt 
+{
+    text-align: center !important;
+}
+
+/*==Footer==*/
+
+/* ======== CSS DropDown List in WP NavWalker =========*/
+#mainNav .dropdown:hover .dropdown-menu
+{
+  display: block;
+}
+
+#mainNav .dropdown-menu
+{
+  /*display: block;*/
+  min-width: 250px !important; /*250*/
+  background: #efea67;
+  right: auto;
+  left: 0 !important;  
+}
+
+#mainNav .dropdown-menu > li > a
+{
+  position: relative;
+  color: #431f20 !important;
+  padding: 15px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;   
+}
+
+#mainNav .dropdown-menu > li > a:hover
+{
+    background: #fffa6f;/*#d5d05b;*/
+    padding-left: 20px;
+}
+
+/***************************************************************/
+
+/*
+.dropdown-menu li,
+.dropdown-menu li a
+{
+  display: block;
+}
+*/
+/*============LEVEL 3 Dropdown Menu=============*/
+
+/*============Gallery Grid=============*/
+
+.grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*==================The Events Calendar===================*/
+.tribe-events-list-widget ol li,
+.list-group > li
+{
+    margin-bottom: -1px !important;
+}
+
+/*====*/
+
+/*=== FIX 768 width ===*/
+    /*=== Hide Navbar Menus ===*/
+    /*
+    @media (min-width: 768px) and (max-width: 991px) {
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+        .navbar-header .collapse, .navbar-toggle {
+            display:block !important;
+        }
+        .navbar-header {
+            float:none;
+        }
+    }
+    */
+
+    /*==grid==*//*
+    .grid li {
+        width: 100% !important;
+    }
+
+
+    /*=== FIX 768 width ===*//*
+    /*@media only screen and (max-width : 768px){}*//*
+    @media (min-width: 768px)  and (max-width : 1024px){
+        /*=== CALLUS ===*/
+        /*.navbar-custom .navbar-nav > .active > a#callus *//*
+        .navbar-custom .navbar-nav > a#callus,
+        .navbar-custom .navbar-nav li a#callus:focus,
+        .navbar-custom .navbar-nav > .active > a#callus {
+            padding: 24px 6px !important;
+            border: 0 !important;
+        }
+
+        /*===Search bar===*//*
+        .search input[type="text"] {
+            width: 472px;
+            height: 38px;
+        }
+    }*/    
+    
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
+    #sub-header {
+        height: 61px !important;
+    }
+
+    #about .about-info {
+        margin-top: 24px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #blog .entry-title {
+        font-size: 24px !important;
+    }
+
+    .panel-body {
+        padding: 0 !important;
+    }
+
+    .post-content p {
+        padding: 10px 25px !important;
+        line-height: 1.5 !important;
+    }
+
+    .desktop-script {
+        display: none !important;
+    }
+
+    #offers {
+        margin-top: 50px !important;
+    }
+
+    .home-slider {
+        display: none !important;
+    }
+    
+    #footer h4 {
+        margin: 0 auto 25px !important;
+        text-align: center !important;
+    }
+
+    #location h1 {
+        top: 30px !important;
+    }
+
+    .sideMenu {
+        top: 61px !important;
+        max-width: 60% !important;
+    }
+
+    .sb-header {
+        margin-top: 24px !important;
+    }
+
+    .button {
+        padding: 5px 4px !important;
+    }
+    
+    .contact-info {
+        font-size: .9rem !important;
+    }
+
+    .hide-hotlinks {
+        display: none !important;
+    }
+
+    .footer-post {
+        margin: -13px 0 10px 0 !important;
+    }
+
+    #copyright {
+        text-align: center !important;
+    }
+
+    #copyright .copyright-social-media {
+        position: relative !important;
+        padding: 1rem 0 0 0 !important;
+        transform: translateY(-10px);
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+    #sub-header {
+        height: 61px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #blog .entry-title {
+        font-size: 24px !important;
+    }
+
+    .panel-body {
+        padding: 0 !important;
+    }
+
+    .post-content p {
+        padding: 10px 25px !important;
+        line-height: 1.5 !important;
+    }
+
+    .desktop-script {
+        display: none !important;
+    }
+
+    #offers {
+        margin-top: 50px !important;
+    }
+
+    .home-slider {
+        display: none !important;
+    }
+
+    #footer h4 {
+        margin: 0 auto 25px !important;
+        text-align: center !important;
+    }
+
+    #location h1 {
+        top: 30px !important;
+    }
+
+    .sideMenu {
+        top: 61px !important;
+        max-width: 60% !important;
+    }
+
+    .sb-header {
+        margin-top: 24px !important;
+    }
+
+    .button {
+        padding: 5px 4px !important;
+    }
+    
+    .contact-info {
+        font-size: .8rem !important;
+    }
+    
+    .hide-hotlinks {
+        display: none !important;
+    }
+
+    .footer-post {
+        margin: -13px 0 10px 0 !important;
+    }
+
+    #copyright {
+        text-align: center !important;
+    }
+
+    #copyright .copyright-social-media {
+        position: relative !important;
+        padding: 1rem 0 0 0 !important;
+        transform: translateY(-10px);
+    }
+}
+
+

@@ -1,0 +1,1987 @@
+/*=== Embed Local Fonts ===*/
+    /*=== ??? ===*/
+/*=== !Embed Local Fonts ===*/
+
+
+/*=== Document Object CSS ===*/
+  /* ---- isotope ---- */
+  * { 
+    box-sizing: border-box; 
+  }
+
+  /* force scrollbar */
+  html { 
+    overflow-y: scroll; 
+  }
+
+   /* ---- isotope ---- */
+
+  body, html
+  {
+    /*overflow: hidden;*/
+    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Poppins', sans-serif; */
+    line-height: 1.5em; /* 1.2em */
+    font-size: 1em;
+    font-weight: lighter;
+    color: #555; 
+    background: #FAFBFC;
+    height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -font-smoothing: antialiased; 
+    
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+/*===Chrome Scrollbar==*/  
+  body::-webkit-scrollbar 
+  {
+    width: 0;
+    /*background: transparent !important;*/
+  }
+/*=====*/ 
+
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: normal;
+  }
+
+  h1
+  {
+    margin: 25px auto 50px;
+    font-weight: lighter;
+    font-size: 48px;
+  }
+
+  h3 {
+    color:#41191A ;
+  }
+
+  a:hover, a:visited, a:active
+  {
+    text-decoration: none;
+  }
+
+/*== !Document Object CSS==*/
+
+/*=== PAGE PRELOADER CSS ===*/
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* change if the mask should have another color then white */
+    /* background-color: #FBFBFB;*/
+    /* background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/bright_squares.png) top left repeat;*/
+
+    /* makes sure it stays on top */  
+    z-index: 1040;
+  }
+
+  #preloader::after {    
+      background: #000000;
+      content: "";
+      position: absolute;/*important*/
+      bottom: 0;/*its super important to set all the position to 0*/
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: 0.9; /*add some opacity*/
+      z-index: -1; /*important*/
+  }   
+/*=== !PAGE PRELOADER CSS ===*/
+
+
+/*=== Animate.css w/ viewportChecker.js === */
+  .hidden_me {
+      opacity: 0;
+  }
+  .visible{
+      opacity: 1;
+  }
+/*=== !Animate.css w/ viewportChecker.js === */
+
+
+/*=== SEARCH BAR ===*/
+  .search {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    /*  background: linear-gradient(to bottom, rgba(68,27,28,0.98) 100%,rgba(68,27,28,0.98) 100%); maroon */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.85) 100%,rgba(0,0,0,0.85) 100%);
+
+    overflow: hidden;
+    display: none;
+    z-index: 2100; 
+  }
+
+  .search .container > .row  {
+    position: relative !important;
+  }
+
+  .search input.txt { 
+    position: relative; 
+    margin: 70px auto 0; /*0 10px 15px 0;*/
+    padding: 0 50px 0 60px;
+
+    height: 75px;
+    background: white;
+    border: 0;
+    font-size: 28px;
+  }
+
+  .search input[type="text"].txt::-webkit-input-placeholder 
+  {
+    color: #dedede;
+  }
+
+  .search .submitSearch {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+
+    margin: 0;
+    background: transparent;
+    color: #bebebe;
+    border: none;
+    z-index: 2600;
+  }
+
+  .search .clearSearch {
+    border: none;
+    background: transparent;
+    color: #bebebe;
+    position: absolute;
+    top: 92px;
+    right: 20px;
+  }
+
+  .search span.closeSearch {
+    margin: 10px;
+    padding: 0;
+    position: fixed;
+    right: 5px;
+    top: 0;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0 1px 0 #111111;
+  }
+
+/*=== !SEARCH BAR ===*/
+
+
+/*=== PACE.js CSS ===*/
+  .pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .pace-inactive {
+    display: none;
+  }
+
+  .pace .pace-progress {
+    background: #ffff00;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+  }
+
+ 
+/*=== !PACE.js CSS ===*/
+
+
+/*=== HERO PARALLAX/BANNER === */
+  /* .my-slider ul li #hero*/
+  /*.bxslider li, #about, #admissions {*/
+  .bxslider li {
+      background-size: cover !important;
+      position: relative;
+      z-index: 3; /*important*/
+      height:100vh;
+  }
+  
+  .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg) center center no-repeat fixed;}
+  .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram.JPG) center center no-repeat fixed;}
+  .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran.JPG) center center no-repeat fixed;}
+  .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals.jpg) center center no-repeat fixed;}
+  .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass.JPG) center center no-repeat fixed;}
+  .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat.JPG) center center no-repeat fixed;}
+
+  /*Fix CSS in Mozilla Firefox*/
+  /*
+      @-moz-document url-prefix() 
+      {
+
+      }
+  */
+
+  /*== background Pattern ==*/
+  /*
+    #welcome::after,
+    #about::after,
+    #admissions::after
+  */
+
+  .bxslider li::after,
+  .search::after {      
+    /*background: url('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/rubber_grip.png') center repeat;*/    
+      background: url('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/black_twill.png') center repeat; 
+      background-size: 15px 15px; /*25px 25px;*/
+      content: "";
+      position: absolute;/*important*/
+      bottom: 0;/*its super important to set all the position to 0*/
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: 0.5; /*add some opacity*/
+      z-index: -1; /*important*/
+  } 
+
+  .hero-title {
+      margin: 100px auto 0; /*250px*/
+
+      text-align: center;
+      text-shadow: 0 10px 10px #222222;
+
+      font-weight: bolder;
+      font-size: 45px;
+      color: white;
+  }
+
+  .bxslider li p {
+        margin: 10px auto;
+        text-align: center;
+        color: white;          
+  }
+
+  /*==Animation.CSS Control==*/
+  ul.bxslider li > div.container {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+  }
+
+  main section > div.container
+  {
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+  }
+/*=== !HERO PARALLAX/BANNER === */
+
+  
+/*== HEADER PAGES ==*/
+  .pages-header 
+  {
+    margin: -20px 0 0 0;
+    padding: 0;
+    height: 300px;
+    background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/bg0.jpg) center center no-repeat fixed;
+  }
+/*== !HEADER PAGES ==*/
+
+/*== HOME MENU ==*/
+.navbar-nav #home-dropdown
+{
+  display: none;
+}
+
+#home-dropdown 
+{
+  background: #efea67;
+  min-width: 250px;
+  padding: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 1px 2px #999999;
+}
+
+.navbar-nav > li:hover #home-dropdown
+{
+  display: block;
+  list-style: none;
+  position: absolute;
+}
+
+#home-dropdown > li > a 
+{
+  display: block;
+  color: #431f20 !important;
+  padding: 15px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;   
+}
+
+#home-dropdown > li > a:hover
+{
+  background: #fffa6f;/*#d5d05b;*/
+  padding-left: 20px;
+}
+
+
+/*=== Sections ===*/
+  main section 
+  {
+    margin: 0 auto;
+    padding: 25px 0 50px;
+    height: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  section h2
+  {
+    margin: 0px 0px 30px 0px;
+  }
+
+  section p 
+  {
+    text-align: justify;
+    /*font-family: 'Poppins', sans-serif;
+    /*font-weight: lighter;*/
+  } 
+
+  /*
+    #about,
+    #upcomming-events,
+    #academics, 
+    #social-proof, 
+    #admissions,
+    #who-are-we,
+    #publishing-partners {
+      height: 100vh;  
+    }
+  */
+  
+  #blog-updates, 
+  #about, 
+  #admissions,
+  #social-proof,
+  #who-are-we,
+  #publishing-partners 
+  {
+    background-color: #F2F5F7; /*FBFBFB*/
+  }
+
+  #offers i
+  {
+    color: #745758;
+    margin-bottom: 30px;
+  }
+
+  /*=========UPCOMING EVENTS========*/
+  #upcoming-events i
+  {
+    color: #745758;
+  }
+
+  #upcoming-events ol,
+  #sidebar ol
+  {
+    margin-bottom: 40px;
+  }
+
+  #sidebar ol 
+  {
+    margin-top: 20px;
+  }
+  /*============= ABOUT US ============*/
+  #about
+  {
+    /*height: 100vh;*/
+    color: white;
+    padding: 30px 0px;   
+    position: relative;    
+    
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .8)),to(rgba(0,0,0, .8))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: -o-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  #about p 
+  {
+    margin-bottom: 25px;
+  }
+
+  #about .about-info
+  {
+    height: 365px;
+  }
+
+  .list-about-us 
+  {
+    margin-bottom: 25px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .list-about-us > li
+  {    
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 10px 0 0;
+    border-right: solid thin #2f2f2f;
+
+  }
+
+  .list-about-us > li:first-child
+  {
+    margin-left: 0;
+  }
+
+  .list-about-us > li:last-child
+  {
+    margin-right: 0;
+    border-right: none !important;
+  }  
+
+  .list-about-us > li > a
+  {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0.89em;
+    text-decoration: none;
+    color: grey;
+  }
+
+  .list-about-us > li > a:hover
+  {
+    color: #efea67;
+  }
+  
+  /* =====>Patron Saints ======== */
+  .list-patron-saints
+  {
+    list-style: none;
+  }
+
+
+  .list-patron-saints > li > p
+  {
+    background: white;
+    box-shadow: 0 1px 1px #AFAFAF;
+  }
+
+  .list-patron-saints > li > p > a
+  {
+    margin: 0;
+    padding-bottom: 15px;
+    display: block;
+    text-align: center;
+    color: #777777;
+  }
+
+  .list-patron-saints > li > p > a > figure
+  {
+    margin-bottom: 15px;
+  }
+
+  /*=======ACADEMICS=======*/
+  #academics ul
+  {
+    list-style: none;
+    padding-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  #academics h4,
+  #academics h5
+  {
+    text-align: left;
+  }
+
+  /*=======ADMISSION=======*/
+  #admissions
+  {
+    position: relative;
+    color: black !important;
+  }
+
+  .admissions-bg
+  {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/enrollment.jpeg) center fixed no-repeat;     
+    background-size: cover;
+
+    -moz-filter: opacity(25%);
+    -o-filter: opacity(25%);
+    -webkit-filter: opacity(25%);
+    filter: opacity(25%);    
+
+  }
+
+  #admissions ul 
+  {
+    margin-top: -10px;
+    margin-left: -25px;
+    margin-bottom: 25px;
+  }
+
+  #admissions ul,
+  #admissions h4,
+  #admissions strong
+  { 
+    text-align: center !important;
+  }
+
+  #admissions ul li
+  {
+    list-style-type: disc;
+  }
+
+  #admissions h4
+  {
+    font-weight: bold;
+  }
+
+  .no-list li
+  {
+    margin-left: -15px;
+    list-style: none !important;
+  }
+
+
+  /*=======GALLERIES=======*/
+  #galleries 
+  {
+    margin-bottom: 0 !important; /*25px*/
+    padding: 0 !important;
+    /*height: 100vh;/**/
+  }
+
+  #galleries h1
+  {
+    margin-bottom: 25px !important;
+  }
+
+  .list-galleries
+  {
+    list-style: none;
+  }
+
+  .list-galleries > li 
+  {
+    display: inline-block;
+    margin: 15px;
+    padding: 23px;
+    background: white;
+    box-shadow: 0 1px 2px #ccc
+  }
+
+  .list-galleries > li > a
+  {
+    text-align: center;
+  }
+
+  .list-galleries > li > a > i
+  {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  
+  /*
+  .list-galleries > li:first-child
+  {
+    display: none;
+  }
+  */
+
+  /*
+  .list-galleries > li::before
+  {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+    content: "\f03e";
+    color: #8E3E40;
+  }
+
+  .list-galleries > li > a
+  {
+    color: #8E3E40;
+  }
+  */
+
+  /*========SOCIAL PROOF / TESTIMONIALS==========*/
+  #social-proof
+  {
+    position: relative;    
+    color: white;
+    background: #222222;
+  }
+
+  #social-proof .bx-pager
+  {
+    bottom: -35px !important;
+    display: none;
+  }
+
+  .testimonials-bg
+  {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/happy-parents.jpg) center fixed no-repeat;
+    background-size: cover; /*100%*/
+
+    filter: brightness(15%);
+  }
+
+  .testimonials figure img
+  {
+    margin: 0 auto;
+    padding: 0;
+    border: 5px solid #333333;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px #999999;
+  }
+
+  .testimonials p
+  {
+    padding: 25px;
+    font-style: italic;
+    position: relative;
+  }
+
+  .testimonials > p.parent-name
+  {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .testimonials p > a 
+  {
+    position: absolute;
+    bottom: 0;  
+    left: 50%;
+  }
+
+  /*======== !SOCIAL PROOF / TESTIMONIALS ==========*/   
+
+  /*==============PUBLISHING PARTNERS===============*/
+  #publishing-partners
+  {
+    position: relative;
+  }
+
+  .publishing-bg
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/books-library.jpg) center fixed no-repeat;     
+    background-size: cover;
+
+    -moz-filter: opacity(10%);
+    -o-filter: opacity(10%);
+    -webkit-filter: opacity(10%);
+    filter: opacity(10%);
+
+  }
+
+  #publishing-partners figure > img
+  {
+    margin: 0 auto !important;
+    transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+  }
+
+  #publishing-partners figure > img:hover
+  {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }  
+  /*==============!PUBLISHING PARTNERS===============*/
+
+  
+  /*=============THE TEAM=============*/
+  .who-are-we-profile {   
+    margin: 10px 0;
+    /*width: 380px;*/
+  
+    background: white;
+  
+    -webkit-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    box-shadow: 0 1px 1px 0 rgba(200,200,200,1);   
+  }
+  
+  .who-are-we-profile:hover
+  {
+    cursor: move;
+  }  
+  #who-are-we .we-are div 
+  { 
+    float: left; 
+    text-align: center;
+  }
+
+  .profile-details
+  {
+    margin-bottom: 15px;
+  }
+
+  .profile-details p
+  {    
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .profile-pic > img
+  {
+    background-color: black; 
+  }
+
+  .social-media
+  {
+    padding-bottom: 15px;
+  }
+
+  .social-media a
+  {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: #F0F2F4;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;      
+  }
+
+  .social-media a:hover
+  {
+    background-color: #F6F3AC;
+  }
+
+  .social-media a > i
+  {
+    color: #3C4858;
+  }
+
+  .social-media a:hover > i
+  {
+    color: #41191A;
+  }
+  /*============= !THE TEAM=============*/
+
+  
+  /*=============CONTACT US===============*/
+  #contactus {
+    font-weight: normal !important;
+    position: relative;
+    color: white;
+
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .8)),to(rgba(0,0,0, .8))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: -o-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    padding: 0 0 50px 0;
+    z-index: 3; /*important*/  
+    
+    /*height: 100vh;*/
+  }
+
+  #contactus i {
+    color: white;/*#F4F19E;*/
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s; 
+  }
+
+  #contactus i:hover
+  {
+    padding-left: 25px;
+  }
+  
+  /*============= !CONTACT US ===============*/
+
+  /*============= OUR LOCATION ===============*/
+  #location
+  {
+    position: relative;
+    padding: 0;
+  }
+
+  #location h1
+  {
+    top: 0;
+    position: absolute;
+    text-align: center;    
+    z-index: 1024;
+    width: 100%;
+    text-shadow: 0 1px white;
+  }
+
+  #map
+  {
+    height: 605px; /*605px; 510px*/
+    width: 100%;
+    bottom: 0;
+  }
+
+  /*============= !OUR LOCATION ===============*/
+
+/*=== !Sections ===*/
+
+
+/*=== Contact Form ===*/
+  #contactus form#contactForm
+  {
+    color: white;
+    font-weight: normal !important;
+    font-size: 12px;
+  }
+
+  form#contactForm input[type='text'],
+  form#contactForm select,
+  form#contactForm textarea
+  {
+    margin: 0 0 7px 0;
+    padding: 12px !important;
+
+    border: 1px solid #111111;
+    box-shadow: 0 1px 1px #2f2f2f;
+
+    border-radius: 3px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;     
+  }
+
+  form#contactForm #fullname,
+  form#contactForm #email,
+  form#contactForm #phone,
+  form#contactForm #message
+  {
+      padding-left: 40px !important;
+      color: #777777;
+  }
+
+  form#contactForm #fullname
+  {
+    background: #2d3033 url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/user.png) no-repeat 12px 13px;
+    background-size: 5%;
+  }
+
+  form#contactForm #email
+  {
+    background: #2d3033 url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/mail.png) no-repeat 12px 15px;
+    background-size: 5%;
+  } 
+
+  form#contactForm #phone
+  {
+    background: #2d3033 url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/phone.png) no-repeat 12px 13px;
+    background-size: 5%;
+  }
+  
+  form#contactForm #message
+  {
+    background: #2d3033 url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/message.png) no-repeat 12px 10px;
+    background-size: 5%;
+  }
+
+  form#contactForm #sendMessage
+  {
+    background: #41191A url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/send.png) no-repeat 12px 13px;
+    background-size: 5%;
+  }
+
+  .phone
+  {
+    border-left: thin solid #555;
+    border-right: thin solid #555;    
+  }
+
+  .phone-2
+  {
+    border-right: thin solid #555; 
+  }
+
+  #sendMessage
+  {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;/*"Bebas Neue Regular"*/
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+    /*background: #41191A;
+    background-color: -webkit-linear-gradient(top, #efea67, #fffa71);
+    background-color: -moz-linear-gradient(top, #efea67, #fffa71);
+    background-color: -ms-linear-gradient(top, #efea67, #fffa71);
+    background-color: -o-linear-gradient(top, #efea67, #fffa71);
+    background-color: linear-gradient(to bottom, #efea67, #fffa71);*/
+
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+
+    color: white;/*#4a481e;*/
+    padding: 10px 20px 10px 20px;
+    /*border: solid #e1dc60 1px;*/
+    border: solid black 1px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;/*#777777 0 1px 3px;*/
+  }
+  
+/*=== !Contact Form ===*/
+ 
+
+/*=== Footer ===*/
+  #footer {
+    color: white;
+    padding: 30px 0px;   
+    position: relative;    
+    
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .8)),to(rgba(0,0,0, .8))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: -o-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #footer section 
+  {
+    height: auto; /*100vh;*/
+    /*height: 720px;*/
+  }
+
+  #footer p 
+  {
+    text-align: justify;
+    color: grey;
+    line-height: 1;
+  }
+
+  #footer h2.footer-about
+  {
+    margin: 25px auto 50px;
+    text-align: center;
+    font-weight: normal !important;
+    color: white;
+  }
+
+  #footer h4 /*h3 */
+  {
+    margin: 25px auto;
+    font-weight: normal !important;
+    /*font-size: 36px;*/   
+    text-align:left;
+  }
+
+  /*===========*/
+  #footer ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer ul li {
+    text-align: left;    
+    list-style: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  #footer ul li > a
+  {
+    display: block;
+    /*width: 100%;
+    height: 100%;*/
+    font-weight: lighter;
+
+    padding: 5px 5px 5px 0;
+
+    color: #aaaaaa;
+
+    border-bottom: none solid #2f2f2f;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;     
+  }
+
+  #footer ul li > a:hover
+  {
+    color: #efea67;
+    padding-left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    /*background: #333333;
+    border-bottom: thin solid #1f1f1f;
+    border-left: 5px solid #1f1f1f;*/
+  }
+
+  /*============*/
+
+  .footer-post
+  {
+    margin: 0;
+    padding: 0;    
+  }
+  
+  .footer-post-wrapper
+  {
+    margin-bottom: 15px;
+    height: 105px;
+  }
+
+  .footer-post h5 > a
+  {
+    margin: 0;
+    color: #f0ed9f;
+  }
+
+  .contact-info {
+    font-family: inherit;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /*===============COPYRIGHT====================*/
+  #copyright
+  {
+    position: relative;
+    padding: 35px 0;
+    height: auto;
+    background: #111111;
+  }
+
+  /*
+  #copyright i
+  {
+    color: white;
+  }
+  */
+
+  #copyright a
+  {
+    display: block;
+    color: white; /*#F3EF90;*/
+    font-size: 1em;
+    font-weight: lighter;
+    padding-right: 5px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;       
+  }
+
+  #copyright a:hover
+  {
+    color: #F3EF90;
+    padding-right: 15px;
+  }
+
+  #copyright .copyright-social-media 
+  {
+    position: absolute;
+    right: 0;
+  }
+
+  #copyright ul li
+  {
+    display: inline-block;
+    list-style: none;
+  }
+ 
+
+  /*
+   .reserved
+  {
+    text-align: center;
+    padding-bottom:  25px;
+  }*/
+/*=== !Footer ===*/
+
+
+/*======= Navbar Custom ======== */
+  /*nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO*/
+
+  .navbar-custom {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  /*
+  .navbar-custom .navbar-brand {
+    color: #fed136;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    text-shadow: 0 1px 0 #222222;
+  }
+  */
+
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus,
+  .navbar-custom .navbar-brand:active,
+  .navbar-custom .navbar-brand.active {
+    color:/*#D5DF08*/#efea67;
+  }
+
+  .navbar-custom .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.02);
+  }
+
+  .navbar-custom .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;/*"Bebas Neue Regular"*/
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 1px 0 #000;/*#777777 0 1px 3px;*/
+    font-size: 12px;
+  }
+
+  .navbar-custom .navbar-toggle:hover,
+  .navbar-custom .navbar-toggle:focus {
+    background-color: #D5DF08; /**/
+    
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s; 
+  }
+
+  .navbar-custom .nav > li > a 
+  {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;/*"Bebas Neue Regular";*/
+    font-weight: bold;
+    font-size: 12px; /*20.5*/
+
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px #222222;
+
+    /*letter-spacing: 1px;*/
+    text-shadow: 0 1px 0 #000;
+    color: white;     
+  }
+
+  .navbar-custom .nav > li > a:hover,
+  .navbar-custom .nav > li > a:focus {
+    color:/*#D5DF08*/#efea67;
+    /*background: #36191a;*/
+    outline: none;
+  }
+
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 0;
+    color: maroon; /* white;*/
+    /*background-color: #fed136;*/
+    background-color:/*#D5DF08*/#efea67;
+    text-shadow: none !important;
+ 
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s; 
+  }
+
+  .navbar-custom .navbar-nav > .active > a:hover,
+  .navbar-custom .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: /*#D5DF08*/#efea67;
+
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;   
+  }
+
+  .navbar-custom .navbar-nav > li:hover
+  {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;  
+  }
+
+  .navbar-custom .navbar-nav > li > a#callus:hover,
+  .navbar-custom .navbar-nav > li > a#callus:focus {
+    color: white;
+    background:  /*#D5DF08*/#efea67;
+    border: thin solid /*#D5DF08*/#efea67;
+    border-bottom: 5px solid darkgoldenrod;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;   
+  }
+
+  .navbar-custom.affix a#callus {
+    margin-left: 14px;
+  }
+
+  .navbar-custom .navbar-nav > .active > a#callus {
+    margin-top: 0 !important; 
+    margin-left: 14px; 
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    border: 0 !important;    
+  }
+
+  .navbar-custom .navbar-nav > .active > a#callus:hover,
+  .navbar-custom .navbar-nav > .active > a#callus:focus {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;  
+  }
+/*======= !Navbar Custom ======== */
+
+
+/*=== BLOG Homepage / News Updates ===*/
+  /*#blog-updates{font-family: 'Poppins', sans-serif;}*/
+
+  #featured-post {
+      display: block;
+  }
+
+  .feat-wrapper
+  {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .feat-content 
+  {
+    clear: both;
+    margin-bottom: 30px;
+  }
+
+  .panel-body 
+  {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  #featured-post .feat-post-details .feat-meta ul li
+  {
+    font-size: 1em !important;
+    font-weight: lighter;
+  }
+
+  .feat-title {
+    margin: 0;
+    padding: 0 0 5px 0;
+  }
+  
+  .feat-separator {
+    max-width: 1144px;
+    margin: 0 auto 30px;
+    padding-bottom: 30px;
+    border-bottom: thin solid #e1e1e2;
+    clear: both;   
+  }    
+
+  .feat-image {
+    display: block;
+    margin-left: 0 !important;
+    /*padding-right: 0 !important;*/
+  }
+
+  /*
+  .feat-image .wp-post-image
+  {
+    width: 750px !important;
+    height: 395px !important;
+  }
+  */
+
+  .feat-meta,
+  .post-meta {
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    color: #9f9f9f;
+  }
+
+  .feat-meta span {
+    margin: 0 auto;      
+    display: inline-block;
+  }
+
+  .feat-meta span > i,
+  .post-meta span > i {
+    padding: 0 5px;
+  }
+
+  .feat-post-details 
+  {
+    position: relative;
+    max-height: 477px;
+  }
+
+  /*
+    .feat-post-details .readMore,
+    .post-details .readMore {
+      position: absolute;
+      display: inline-block;
+      width: 93.5%;
+      text-shadow: 0 1px 0 #111;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+      background: #8E3E40 !important;
+      border: thin solid #3F1819 !important;
+      bottom: 0;
+      left: 10px;
+    }
+
+    .feat-post-details .readMore:hover,
+    .post-details .readMore:hover {
+      background: #efea67 !important;
+      border: thin solid goldenrod !important;
+      color:#8E3E40;
+      text-shadow: 0 1px 0 #CCC;
+
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;  
+    } 
+  */   
+
+  .feat-post-details p {
+    margin-top: 15px;
+  }
+  
+  /*==============*/
+
+  .post-details h4 {
+    margin: 30px 0 5px 0;
+    padding: 0 5px;
+  }
+
+  .post-details h4 > a,
+  .feat-title a,
+  h2.post-title > a
+  {
+    /*color: #41191A ;*/
+    color: #8E3E40;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;   
+  }
+
+  .post-details h4 > a:hover, .post-details h4 > a:active,
+  .feat-title a:hover, .feat-title a:active,
+  h2.post-title > a:hover, h2.post-title > a:active
+  {
+    text-decoration: none;
+    color: #EFEA67;
+  }
+  
+  
+  .post-content p {
+    padding: 10px 35px 20px;
+    font-size: 16px;
+    text-align: justify !important;
+    line-height: normal;
+  }
+
+  .post-content p > .more-link
+  {
+    display: inline;
+    text-align: center;
+    color: #555555;
+  }
+
+  .index-recent-post {
+    display: block;
+  }
+
+  .index-recent-post .post-content .meta ul,
+  #featured-post .feat-post-details .feat-meta ul 
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .index-recent-post .post-content .meta ul li,
+  #featured-post .feat-post-details .feat-meta ul li
+  {
+    font-size: 0.8em;
+    list-style: none;
+    display: inline; 
+    color: #9f9f9f;
+  }
+
+  .index-recent-post-wrapper 
+  {
+    background: white !important;
+    
+    -webkit-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    box-shadow: 0 1px 1px 0 rgba(200,200,200,1);   
+    
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;       
+  }
+
+  .index-recent-post-wrapper:hover
+  {
+    -webkit-box-shadow: 0 5px 5px 0 rgba(200,200,200,1);
+    -moz-box-shadow: 0 5px 5px 0 rgba(200,200,200,1);
+    box-shadow: 0 5px 5px 0 rgba(200,200,200,1);   
+  } 
+ 
+  .index-recent-post-wrapper .post-meta 
+  {
+    color: #9f9f9f;
+    /*border-top: thin solid #efefef;*/
+  }
+/* == !BLOG Homepage / News Updates == */
+
+/*====================== ISOTOPE =============================*/
+  .grid {
+    background: transparent;
+  }
+
+  /* clear fix */
+  .grid::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+  /* fluid 5 columns */
+  .grid-sizer,
+  .grid-item { width: 20%; }
+
+  /* 2 columns */
+  .grid-item--width2 { width: 40%; }
+  .grid-item--height2 { height: 200px; }
+
+  .grid-item {
+    float: left;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* ---- button ---- */
+  .button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    background: #EEE;
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+    color: #222;
+    /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/             
+    font-size: 14px; /*16px*/                                                                         
+    text-shadow: 0 1px white;
+    cursor: pointer;                                                                                   
+  }
+
+  .button:hover {
+    background-color: #8CF;
+    text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+    color: #222;
+    
+    /*a tag*/
+    text-decoration: none;
+  }
+
+  .button:active,
+  .button.is-checked {
+    background-color: #28F;
+  }
+
+  .button.is-checked {
+    color: white;
+    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+  }
+
+  .button:active {
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  }
+
+  /* ---- button-group ---- */
+  .button-group {
+    margin: 0 auto 10px;
+    /*width: auto;*/
+    display: inline-block;
+  }
+
+  .button-group::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .button-group .button {
+    float: left;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 1px;
+  }
+
+  .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+  .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/*=== !ISOTOPE ===*/
+
+/* ==================== PAGES ======================*/
+    #sub-header
+    {
+      height: 75px;
+    }
+/* ==================== !PAGES ======================*/
+
+/* ==================== BLOGS ======================*/
+  #blog-bg,
+  #page-bg
+  {
+    background: #F2F5F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #blog, #page
+  {  
+    height: auto;
+  }
+
+  .blog-posts > article,
+  .single-posts > article
+  {
+    margin-bottom: 25px;
+    background: white;
+
+    -webkit-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+  }
+ 
+  .blog-posts .post-image > img,
+  .single-posts .post-image > img
+  {
+    width: 100%;
+    height: 450px;
+  }
+
+  .blog-posts .post-content,
+  .single-posts .post-content
+  {
+    font-size: 0.9em;
+    padding-bottom: 25px;
+  }
+
+  .blog-posts .post-content .post-title,
+  .single-posts .post-content .post-title
+  {
+    margin-bottom: 15px;
+    font-weight: bolder;
+  }
+
+  .blog-posts .post-content .meta > ul,
+  .single-posts .post-content .meta > ul
+  {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .blog-posts .post-content .meta > ul li,
+  .single-posts .post-content .meta > ul li
+  {
+    display: inline;
+    list-style: none;
+    padding-right: 10px;
+  }
+
+  .blog-posts .post-content .meta > ul li:last-child,
+  .single-posts .post-content .meta > ul li:last-child
+  {
+    padding-right: 0;
+  }
+/* ==================== !BLOGS ======================*/
+
+/*==============WP Pagination============*/
+.page-numbers:link, .page-numbers:visited, .page-numbers:active
+{
+  text-decoration: none !important;
+}
+
+.page-numbers
+{
+  background: white;
+  padding: 15px;
+  border: thin solid #dddddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 1px 0 #AFAFAF;
+  color: #431f20;
+  text-decoration: none;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;   
+}
+
+.page-numbers:hover
+{
+  text-decoration: none;
+  color: #efea67;
+  background: #431f20;
+  border: thin solid #160000;
+}
+
+.nav-links .current
+{
+  background: none;
+  box-shadow: none;
+}
+
+.nav-links .current:hover
+{
+  text-decoration: none;
+  color: #431f20;
+  background: none;
+  box-shadow: none;
+  border: thin solid #dddddd;
+}
+
+/* ==================== THE POST ======================*/
+
+.single-posts p
+{
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* ==================== !THE POST =====================*/
+
+/* ==================== THE PAGE ======================*/
+  #page .entry-title,
+  #blog .entry-title,
+  #blog-bg .entry-title a,
+  #blog .page-title
+  {
+    margin-top: 0 !important;
+    text-align: center;
+    color: #745758;
+  }
+
+  #page-bg .page-header,
+  #blog-bg .page-header
+  {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: none !important;
+  }
+
+  #page-bg #page > .page-content > .error-404 .page-content,
+  .not-found
+  {
+    height: 100vh;
+  }
+
+  .page-content .page-content p,
+  .not-found .page-content p 
+  {
+    text-align: center;
+  }
+
+  #page-bg .page
+  {
+    background: white;    
+    padding: 40px; /*50px 75px 75px;*/
+
+    -webkit-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    box-shadow: 0 1px 1px 0 rgba(200,200,200,1);    
+  }
+
+  
+
+/* ==================== !THE PAGE ======================*/
+
+/* ==================== THE SEARCH ======================*/
+  .no-results,
+  .not-found
+  {
+    margin: 0;
+  }
+  /*
+  .no-results .search 
+  { 
+    display: none !important;
+  }
+  */
+
+/* ==================== !THE SEARCH ======================*/
+
+/* ==================== SIDEBAR ======================*/
+  #sidebar
+  {
+    background: transparent;
+  }
+
+  .sb-widget
+  {
+    margin-bottom: 50px;
+    padding-bottom: 0;
+
+    /*
+    background: white;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(200,200,200,1);
+    box-shadow: 0 1px 1px 0 rgba(200,200,200,1);  
+    border-bottom: thin solid #DFDFDF;   */
+  }
+
+  .sb-header
+  {
+    margin-bottom: 5px;
+  }
+
+  .sb-header .fb-page
+  {
+    text-transform: none !important;
+  }
+
+  .sb-header h4
+  {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #745758;
+  }
+
+  .sb-content
+  {
+    padding: 0;
+    text-align: left; /*left*/
+    color: #999999;
+    text-shadow: 0 1px 0 white;    
+  }
+
+  .sb-events
+  {
+    text-align: center;
+    padding: 0;
+  }
+
+      /*===== DIV ====*/
+      .sb-content > div
+      {
+        padding: 10px 0 0 0;
+      }
+
+      /*===== UNORDERED LIST====*/
+      .sb-content > ul
+      {      
+        padding-left: 0; /*20px;*/
+        list-style: none;
+      }
+
+      .sb-content > ul > li:first-child
+      {
+        margin-top: 10px;
+      }
+
+      .sb-content > ul > li
+      {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: thin solid #CCCCCC;
+      }
+
+      .sb-content > ul > li::before
+      {
+        font-family: FontAwesome;
+        display: inline-block;
+        padding-right: 10px;
+        vertical-align: middle;
+        content: "\f08d";
+      }
+
+      .sb-content > ul > li > a
+      {
+        color: #999999;
+        text-shadow: 0 1px 0 white;        
+    
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;   
+      }
+      
+      .sb-content > ul > li > a:hover
+      {
+        padding-left: 5px;
+        text-decoration: none;
+      }
+
+      .sb-info > i
+      {
+        text-align: left !important;
+      } 
+    
+/* ==================== !SIDEBAR ======================*/
+
+/* ==================== THE EVENTS CALENDAR ======================*/
+      html .tribe-is-responsive .tribe-events-widget-link
+      {
+          position: absolute !important;
+          display: none !important;    
+      }
+      .tribe-event-title > a
+      {
+        color: #745758;
+      }
+
+      .tribe-event-title > a:hover, 
+      .tribe-event-title > a:active
+      {
+        /*text-decoration: none;
+        color: #EFEA67;*/
+        text-decoration: underline;
+        color: inherit;
+        
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;  
+      }
+
+      .tribe-events-widget-link
+      {
+        text-align: center !important;
+        font-family: 'Ubuntu', sans-serif;        
+      }
+
+      .tribe-events-adv-list-widget .tribe-events-widget-link a, 
+      .tribe-events-back a, 
+      .tribe-events-list-widget .tribe-events-widget-link a, 
+      ul.tribe-events-sub-nav a
+      {
+        font-weight: normal;
+      }
+
+      .tribe-events-content 
+      {
+        border-top: thin solid #dddddd;
+        border-bottom: thin solid #dddddd;
+        padding: 15px 0;
+      }
+
+      .tribe-events-single-event-title
+      {
+        margin-bottom: 25px !important;
+      }
+
+      .tribe-events-schedule
+      {
+        margin-bottom: 50px;
+        padding: 0;
+      }
+
+      .tribe-events-single-event-title,
+      .tribe-events-schedule
+      {
+        text-align: center !important;
+      }
+
+      #tribe-events-content
+      {
+        margin-bottom: 0 !important;
+      }
+      
+/* ==================== !THE EVENTS CALENDAR =====================*/
+
+.hideme
+{
+  opacity: 0;
+}
+
+/*=== RECYCLE BIN ===*/
+  /*
+  
+
+  */
+/*=== !RECYCLE BIN ===*/

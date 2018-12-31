@@ -1,0 +1,20 @@
+# folder
+node_modules/
+inc/
+backup-php/
+layouts/
+sass/
+
+# files
+backup.txt
+gulpfile.js
+LICENSE
+package-lock.json
+package.json
+phpcs.xml.dist
+readme.txt
+rtl.css
+section-WHO-ARE-WE-and-TESTIMONIAL.txt
+sjsmwebsite accounts.docx
+old_wp_bootstrap_navwalker.php
+wp_bootstrap_navwalker.php

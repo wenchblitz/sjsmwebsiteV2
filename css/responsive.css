@@ -1,0 +1,350 @@
+/*===========================================*/
+/*==========  Mobile First Method  ==========*/
+/*===========================================*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+   .navbar-custom.affix #sjsmLOGO,
+   nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+        margin: 8px 0 0 8px;
+        padding: 0;
+
+        display: block;
+        width: 42px;
+        height: 40px;
+
+        background: url('../img/sjsmLOGO.png') center no-repeat;
+        background-size: 42px 40px;
+
+        outline: none;
+        border: 0;
+
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; 
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+   .navbar-custom.affix #sjsmLOGO,
+   nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+        margin: 8px 0 0 8px;
+        padding: 0;
+
+        display: block;
+        width: 42px;
+        height: 40px;
+
+        background: url('../img/sjsmLOGO.png') center no-repeat;
+        background-size: 42px 40px;
+
+        outline: none;
+        border: 0;
+
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; 
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+    /*==NAV BAR==*/
+    .navbar-custom {
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.90) 100%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.90) 100%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.90) 100%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 1.5em;
+        /*font-size: 12px;*/
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .navbar-custom .navbar-nav > .active > a {
+        border-radius: 0; /*3px*/
+    }
+
+    .navbar-custom.affix {
+        /*background-color: #101010; */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */       
+        /*background: -moz-linear-gradient(top, rgba(0,0,0,0.90) 100%, rgba(0,0,0,0) 100%); /* FF3.6-15 */ /* original: rgba(0,0,0,0.65) */
+        /*background: -webkit-linear-gradient(top, rgba(0,0,0,0.90) 100%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        /*background: linear-gradient(to bottom, rgba(0,0,0,0.85) 100%,rgba(0,0,0,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */   
+        padding: 0 0 !important; /* 10px 0 */
+        background: #41191A;
+        border-bottom: 5px solid /*#D5DF08*/#efea67;
+    }
+
+    .navbar-custom.affix .navbar-brand {
+        font-size: 1em;  
+    }
+
+    .navbar-custom.affix #sjsmLOGO{
+        margin-top: 6px;
+        padding: 0;
+
+        display: block;
+        width: 61px;
+        height: 59px;
+
+        background: url('../img/sjsmLOGO.png') center no-repeat;
+        background-size: 61px 59px;
+
+        outline: none;
+        border: 0;
+
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;                
+    }
+    
+    /*== nav walker ==*/    
+    .dropdown:hover .dropdown-menu 
+    {
+        display: block;
+    }
+
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+    .navbar-custom {
+        border-color: transparent;        
+        background: #733334;
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */  
+    }
+
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+        margin: 0;
+        padding: 0;
+
+        display: block;
+        width: 152px; /*ORIGINAL: width: (152px) */
+        height: 150px; /*ORIGINAL: height: (150px) */
+
+        background: url('../img/sjsmLOGO.png') center no-repeat;
+        background-size: 152px 150px;
+
+        outline: none;
+        border: 0;
+    }   
+
+    a.btn.btn-success.page-scroll {
+        margin-top: 9px;
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+        border-bottom: 5px solid green;    
+    }     
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+    .navbar-custom 
+    {
+        border-color: transparent;
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */  
+        
+        /**
+        padding: 0 0 !important; 
+        background: #41191A;
+        border-bottom: 5px solid /*#D5DF08 OR #efea67;
+        */        
+    }
+
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+        margin: 0;
+        padding: 0;
+
+        display: block;
+        width: 152px; /*ORIGINAL: width: (152px) */
+        height: 150px; /*ORIGINAL: height: (150px) */
+
+        background: url('../img/sjsmLOGO.png') center no-repeat;
+        background-size: 152px 150px;
+
+        outline: none;
+        border: 0;
+    }   
+
+    a.btn.btn-success.page-scroll {
+        margin-top: 9px;
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+        border-bottom: 5px solid green;    
+    }       
+}
+
+/*===============================================*/
+/*==========  Non-Mobile First Method  ==========*/
+/*===============================================*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+    .navbar-custom {
+        border-color: transparent;
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */ /* original: rgba(0,0,0,0.65) */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */  
+    }
+
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+        margin: 0;
+        padding: 0;
+
+        display: block;
+        width: 152px; /*ORIGINAL: width: (152px) */
+        height: 150px; /*ORIGINAL: height: (150px) */
+
+        background: url('../img/sjsmLOGO.png') center no-repeat;
+        background-size: 152px 150px;
+
+        outline: none;
+        border: 0;
+    } 
+    
+    .mobile-script {
+        display: none !important; 
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+    .navbar-custom {
+        border-color: transparent;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */  
+    }
+
+    .mobile-script {
+        display: none !important; 
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+{    
+    .navbar-custom .navbar-brand {
+        font-size: 1em;
+    }   
+
+    .navbar-custom {
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.90) 100%, rgba(0,0,0,0) 100%); /* FF3.6-15 */                      
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.90) 100%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.90) 100%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+        border-color: transparent;
+    }
+
+    .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg) center center no-repeat fixed;}
+    .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed;}
+    .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.JPG) center center no-repeat fixed;}
+
+    #offers {
+        margin-top: 50px !important;
+    }
+
+    .mobile-script {
+        display: none !important; 
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    .navbar-custom.affix #sjsmLOGO,
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+            margin: 8px 0 0 8px;
+            padding: 0;
+
+            display: block;
+            width: 47px; /*42px*/
+            height: 45px; /*40px*/
+
+            background: url('../img/sjsmLOGO.png') center no-repeat;
+            background-size: 47px 45px;
+
+            outline: none;
+            border: 0;
+
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s; 
+    }
+
+    .navbar-custom .navbar-nav > .active > a#callus {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg) center center no-repeat fixed;}
+    .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed;}
+    .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.JPG) center center no-repeat fixed;}
+
+    /* galleries isotope */
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }  
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+    .navbar-custom.affix #sjsmLOGO,
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top #sjsmLOGO {
+            margin: 8px 0 0 8px;
+            padding: 0;
+
+            display: block;
+            width: 47px;
+            height: 45px;
+
+            background: url('../img/sjsmLOGO.png') center no-repeat;
+            background-size: 47px 45px;
+
+            outline: none;
+            border: 0;
+
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s; 
+    }
+
+    .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg) center center no-repeat fixed;}
+    .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed;}
+    .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.JPG) center center no-repeat fixed;}
+    .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.JPG) center center no-repeat fixed;}
+
+    .navbar-custom .navbar-nav > .active > a#callus {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}

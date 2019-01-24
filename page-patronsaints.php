@@ -32,7 +32,7 @@ get_header();
                     </header><!-- .entry-header -->
                     
                     <div class="container-fluid">
-                        <ul class="list-patron-saints">
+                        <ul class="list-patron-saints row">
                             <?php
                                 $args = array(
                                     'depth' => 1,

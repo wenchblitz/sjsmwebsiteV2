@@ -17,9 +17,9 @@ get_header(); ?>
                 <section id="offers">
                     <div class="container">
                         <div class="row">
-                            <h1 class="hideme">We Offer</h1>
+                            <h1>We Offer</h1>
                             <div class="container">
-                                <div class="row hideme">
+                                <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <!--<i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>  -->
                                         <i class="fas fa-dove fa-5x"></i>
@@ -45,11 +45,11 @@ get_header(); ?>
                 </section>
 
                 <section id="blog-updates">
-                    <h1 class="hideme">Blog Updates</h1>
+                    <h1>Blog Updates</h1>
 
                     <!--featured post-->                   
                     <article id="featured-post" class="container">
-                        <div class="row hideme">
+                        <div class="row">
 
                         <?php query_posts('posts_per_page=1&cat=25');  
                             if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -99,7 +99,7 @@ get_header(); ?>
                     
                     <!--recent post-->                    
                     <article class="container index-recent-post">
-                        <div class="row hideme">
+                        <div class="row">
 
                             <!-- Display post Outside the Loop -->
                             <?php 
@@ -122,7 +122,7 @@ get_header(); ?>
 
                                 <?php while ( have_posts() ) : the_post(); ?>
                                     
-                                <div class="col-lg-4 hideme">
+                                <div class="col-lg-4 col-md-4 col-sm-4">
 
                                     <article class="index-recent-post-wrapper">
                                         <figure class="post-image">
@@ -130,7 +130,7 @@ get_header(); ?>
                                             <?php if ( has_post_thumbnail() ) {
                                                     the_post_thumbnail();
                                                 } else { ?>
-                                                    <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/st-clare-building.jpg" alt="<?php the_title(); ?>" />
+                                                    <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/st-clare-building-recent.jpg" alt="<?php the_title(); ?>" />
                                             <?php } ?>
                                             </a>    
                                         </figure>   
@@ -162,13 +162,13 @@ get_header(); ?>
                             <?php endif; ?><?php wp_reset_query(); ?>
                     </article>                    
                     <br>
-                    <a href="<?php echo get_home_url(); ?>/blog/" class="alert alert-warning hideme" role="alert">View all Post</a>
+                    <a href="<?php echo get_home_url(); ?>/blog/" class="alert alert-warning" role="alert">View all Post</a>
                 </section>       
                 
                 <section id="upcoming-events">
-                    <h1 class="hideme">News & Updates</h1>
+                    <h1>News & Updates</h1>
                     <div class="container">
-                        <div class="row hideme">
+                        <div class="row">
 
                             <div class="col-lg-8">
                                 <h3><i class="far fa-calendar-alt"></i>&nbsp; Recent Events</h3>                                
@@ -202,7 +202,7 @@ get_header(); ?>
                     </div>
                 </section>
 
-                <section id="about" class="hideme">
+                <section id="about">
                     <h1>About Us</h1>
                     <div class="container">
                         <ul class="list-about-us">
@@ -232,11 +232,15 @@ get_header(); ?>
                             </div>
                             <div class="col-lg-6">
                                 <div class="about-info">
-                                    <p>St. Joseph’s School of Mactan is an institution of learning, owned and administered by the Franciscan Sisters of the Immaculate Conception of the Holy Mother of God, Philippine South Province (SFIC-PSP) as a non-stock, non-profit corporation. It is an integral part of the SFIC Educational Network System in the Philippines and an instrumentality of the SFIC-PSP.</p>
-                                    <p>As a Catholic School it is at the service of the Church and the Earth Community as it provides excellent programs and services to form the youth to become God-loving, evangelizing, and responsible members of an Earth Community of just and lasting peace.</p>
-                                    <p>As a Philippine School, it situates itself within the prevailing socio-eco-political, cultural technological realities and relationships not only in the country but also within the Region and the world as a whole.</p>                                
-                                    <p>As an SFIC–owned School, SJSM, continues the mission of its founder, Mother Teresia Van Miert, who “was deeply moved by the needs of the times in which she lived,” and “steeped in the Gospel and in the life of St. Francis, discovered ways to alleviate the sufferings of the people in her surroundings; there was no Catholic education; there was no adequate care for the sick and the aged; many were jobless, beggars and tramps.” She led the Sisters of the Congregation in the task of teaching and in alleviating physical and social needs.</p>
-                                    <p>As a member of the SFIC Educational Network System, it shares a common Vision, Mission and Core Values with the other member schools. Sharing of human resources and their expertise, information, materials on the latest trends as well as issues affecting the schools are regularly done among the member schools. The membership of the school corporations concerned meet annually to deepen ties among themselves, give school updates and for formation purposes.</p>
+                                    <div class="mobile-info">
+                                        <p>St. Joseph’s School of Mactan is an institution of learning, owned and administered by the Franciscan Sisters of the Immaculate Conception of the Holy Mother of God, Philippine South Province (SFIC-PSP) as a non-stock, non-profit corporation. It is an integral part of the SFIC Educational Network System in the Philippines and an instrumentality of the SFIC-PSP.&nbsp; <a href="http://sjsm.edu.ph/about-sjsm/">read more &rarr;</a></p>
+                                    </div>
+                                    <div class="desktop-info">
+                                        <p>St. Joseph’s School of Mactan is an institution of learning, owned and administered by the Franciscan Sisters of the Immaculate Conception of the Holy Mother of God, Philippine South Province (SFIC-PSP) as a non-stock, non-profit corporation. It is an integral part of the SFIC Educational Network System in the Philippines and an instrumentality of the SFIC-PSP.</p>
+                                        <p>As a Catholic School it is at the service of the Church and the Earth Community as it provides excellent programs and services to form the youth to become God-loving, evangelizing, and responsible members of an Earth Community of just and lasting peace.</p>
+                                        <p>As a Philippine School, it situates itself within the prevailing socio-eco-political, cultural technological realities and relationships not only in the country but also within the Region and the world as a whole.&nbsp; <a href="http://sjsm.edu.ph/about-sjsm/">read more &rarr;</a></p>                                        
+                                    </div>
+                                    
                                 </div>                                
                             </div>
                         </div>
@@ -246,7 +250,7 @@ get_header(); ?>
 
                 <section id="academics">
                     <div class="container">
-                        <div class="row hideme">
+                        <div class="row">
                             <div class="col-lg-12">
                                 <h1>Academics</h1>                             
                                   
@@ -268,7 +272,7 @@ get_header(); ?>
                     </div>
                 </section>
 
-                <section id="admissions" class="hideme">
+                <section id="admissions">
                     <!--<div class="admissions-bg"></div>-->
                     <div class="container">
                         <div class="row">
@@ -304,58 +308,56 @@ get_header(); ?>
                     <div class="container-fluid">
                         <div class="row">         
                             <!---->
-                            <h1 class="hideme">Photo Galleries</h1>  
+                            <h1>Photo Galleries</h1>  
                             <!-- Isotope Controls -->                   
-                            <div class="button-group filters-button-group hideme">
+                            <div class="button-group filters-button-group">
                                 <a class="button is-checked" data-filter="*">All</a>
                                 <a class="button" data-filter=".outreach">Outreach</a>
                                 <a class="button" data-filter=".retreat">Retreat</a>
                                 <a class="button" data-filter=".holy-mass">Holy Mass</a>
                                 <a class="button" href="<?php echo get_home_url(); ?>/photo-gallery/">View Galleries</a>
-                            </div><!-- button-group --> 
+                            </div><!-- button-group -->                             
                             
-                            <div class="grid hideme">
+                            <div class="grid">
                                 <div class="element-item grid-item outreach" data-category="outreach">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-1.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-1.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-1.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item retreat" data-category="retreat">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-1.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-1.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-1.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item holy-mass" data-category="holy-mass">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-1.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-1.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-1.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item outreach" data-category="outreach">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-2.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-2.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-2.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item holy-mass" data-category="holy-mass">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-2.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-2.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-2.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item retreat" data-category="retreat">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-2.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-2.JPG" alt="" class="img-responsive"></a>
+                                     <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-2.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item holy-mass" data-category="holy-mass">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-3.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-3.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-3.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item outreach" data-category="outreach">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-3.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-3.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/outreach-3.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item holy-mass" data-category="holy-mass">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-4.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-4.JPG" alt="" class="img-responsive"></a>
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/mass-4.JPG" alt="" class="img-responsive">
                                 </div>
 
                                 <div class="element-item grid-item retreat" data-category="retreat">
-                                    <a class="recent-photos" href="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-3.JPG" class="img-responsive"><img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-3.JPG" alt="" class="img-responsive"></a>
-                                </div>
-                                
-                                                                       
+                                    <img src="<?php echo get_bloginfo('template_directory');?>/img/featured-galleries/retreat-3.JPG" alt="" class="img-responsive">
+                                </div>                                                                
                             </div><!--Grid-->
                             <!---->                            
 
@@ -363,7 +365,7 @@ get_header(); ?>
                     <div><!--container-->
                 </section>
 
-                <section id="publishing-partners" class="hideme">
+                <section id="publishing-partners">
                     <!--<div class="publishing-bg"></div>-->
                     <div class="container">
                         <div class="row">
@@ -374,22 +376,22 @@ get_header(); ?>
                                     <div class="container">
                                         <div class="row publishing-company">
                                         
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/PHOENIX.png" alt="Phoenix Publishing House" class="img-responsive"></figure>
                                             </div>     
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/Vibal.png" alt="Vibal Group" class="img-responsive"></figure>
                                             </div>
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/SoLINE.png" alt="SoLINE Publishing Company Inc," class="img-responsive"></figure>
                                             </div>                                                                                         
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/C&E.png" alt="C&E Publishing, Inc." class="img-responsive"></figure>
                                             </div>  
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/StBernadette.png" alt="St. Bernadette Publishing House Corporation" class="img-responsive"></figure>
                                             </div>                                               
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/TechFactorsInc2.png" alt="TechFactors Inc." class="img-responsive"></figure>
                                             </div>    
                                         
@@ -399,22 +401,22 @@ get_header(); ?>
                                     <div class="container">
                                         <div class="row">
                     
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/TheLibrary.png" alt="The Library Publishing House, Inc." class="img-responsive"></figure>
                                             </div>        
                             
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/BrilliantCreations.png" alt="Brilliant Creations Publishing, Inc" class="img-responsive"></figure>
                                             </div>                    
                                                               
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/RexBookstore.png" alt="Rex Bookstore Inc." class="img-responsive"></figure>
                                             </div>                    
                     
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/FnB.png" alt="FnB Educational, Inc." class="img-responsive"></figure>
                                             </div>
-                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <div class="col-md-2 col-sm-4 col-xs-4">
                                                 <figure><img src="<?php echo get_bloginfo('template_directory');?>/img/publishing/Sibs.png" alt="Sibs Publishing House" class="img-responsive"></figure>
                                             </div>                                                                                            
                                         

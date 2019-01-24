@@ -56,9 +56,11 @@
      *                Galleries jQuery Manipulation                  *
      *****************************************************************/      
     //==
+        $('.list-galleries').wrap('<div class="container-fluid"></div>');
+        $('.list-galleries').addClass('row');
         $('.list-galleries > li:first-child').remove();
-
-        $('.list-galleries > li > a').prepend('<i class="far fa-images fa-10x"></i>');
+        $('.list-galleries > li').addClass('col-lg-3 col-md-3 col-sm-6 col-lg-6');
+        $('.list-galleries > li > a').prepend('<i class="far fa-images fa-8x"></i>');
         //$('.list-galleries > li > a').wrap('');
     //==
 
@@ -286,11 +288,11 @@
                     zindex: 2700
                 });
                           
-            $(".writeMessage, .about-info").niceScroll(); 
+            $(".writeMessage, .desktop-info").niceScroll(); 
         }          
         
         // Other Browsers
-        $(".writeMessage, .about-info").niceScroll(); 
+        $(".writeMessage, .desktop-info").niceScroll(); 
     //==
 
     /*****************************************************************

@@ -256,13 +256,6 @@
         border-color: transparent;
     }
 
-    .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg) center center no-repeat fixed;}
-    .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed;}
-    .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.JPG) center center no-repeat fixed;}
-
     #offers {
         margin-top: 50px !important;
     }
@@ -300,13 +293,6 @@
         padding-bottom: 10px !important;
     }
 
-    .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg) center center no-repeat fixed;}
-    .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed;}
-    .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.JPG) center center no-repeat fixed;}
-
     /* galleries isotope */
     .grid-sizer,
     .grid-item {
@@ -335,13 +321,6 @@
             -moz-transition: all 0.3s;
             transition: all 0.3s; 
     }
-
-    .bxslider li.parallax-section-1 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg) center center no-repeat fixed;}
-    .bxslider li.parallax-section-2 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-3 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-4 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed;}
-    .bxslider li.parallax-section-5 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.JPG) center center no-repeat fixed;}
-    .bxslider li.parallax-section-6 {background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.JPG) center center no-repeat fixed;}
 
     .navbar-custom .navbar-nav > .active > a#callus {
         padding-top: 10px !important;

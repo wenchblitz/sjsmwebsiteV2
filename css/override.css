@@ -231,31 +231,107 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.ac
             height: 38px;
         }
     }*/    
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) { 
+
+    .bxslider li.parallax-section-1 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-2 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-3 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-4 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-5 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-6 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.jpg) center center no-repeat fixed !important; }
+
+}
     
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
+    section h1 {
+        font-size: 38px !important;
+    }
 
     #sub-header {
         height: 61px !important;
     }
 
-    #about .about-info {
-        margin-top: 24px !important;
+    .index-recent-post-wrapper {
+        margin-bottom: 24px !important;
     }
 
+    #admissions a.alert {
+        padding: 10px !important;
+        font-size: 14px !important; 
+    }
 
+    #about .about-info {
+        margin-top: 24px !important;
+        height: 245px !important;
+    }
 
+    #blog-updates h3.feat-title {
+        margin-top: 25px !important;        
+    }
 
+    #blog-updates a.alert {
+        display: inline-block !important;
+    }
 
+    .bxslider li.parallax-section-1 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-2 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-3 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-4 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-5 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-6 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.jpg) center center no-repeat fixed !important; }
 
+    #about {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .85)),to(rgba(0,0,0, .85))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-image: -o-linear-gradient(left, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
+    #contactus {    
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .65)),to(rgba(0,0,0, .65))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-image: -o-linear-gradient(left, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
+    #footer {         
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .9)),to(rgba(0,0,0, .9))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-image: -o-linear-gradient(left, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
+    .mobile-info {
+        display: block !important;
+    }
 
+    .mobile-info a:link {
+    color: #d5d05b;
+    }
+     
+    .mobile-info a:hover {
+        color: #D5DF08;
+    }
+    
+    .desktop-info {
+        display: none !important;
+    }
 
-
-
-
+    .footer-facebook {
+        display: none !important;
+    }
 
     #blog .entry-title {
         font-size: 24px !important;
@@ -270,16 +346,8 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.ac
         line-height: 1.5 !important;
     }
 
-    .desktop-script {
-        display: none !important;
-    }
-
     #offers {
         margin-top: 50px !important;
-    }
-
-    .home-slider {
-        display: none !important;
     }
     
     #footer h4 {
@@ -294,6 +362,11 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.ac
     .sideMenu {
         top: 61px !important;
         max-width: 60% !important;
+    }
+
+    #blog-bg #sidebar > .sb-widget:first-child .sb-header,
+    #page-bg #sidebar > .sb-widget:first-child .sb-header {
+        text-align: center !important;
     }
 
     .sb-header {
@@ -329,27 +402,92 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.ac
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
+    section h1 {
+        font-size: 38px !important;
+    }
+
     #sub-header {
         height: 61px !important;
     }
 
+    #about .about-info {
+        margin-top: 24px !important;
+        height: 245px !important;
+    }
 
+    #admissions a.alert {
+        padding: 10px !important;
+        font-size: 14px !important; 
+    }
 
+    #blog-updates h3.feat-title {
+        margin-top: 25px !important;
+    }
 
+    #blog-updates a.alert {
+        display: inline-block !important;
+    }
 
+    .bxslider li.parallax-section-1 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-2 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-outreachprogram-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-3 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-kapatiran-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-4 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-intramurals-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-5 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-holymass-m.jpg) center center no-repeat fixed !important; }
+    .bxslider li.parallax-section-6 { background: url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/banner/banner-retreat-m.jpg) center center no-repeat fixed !important; }
 
+    .index-recent-post-wrapper {
+        margin-bottom: 24px !important;
+    }
+    
+    #about {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .85)),to(rgba(0,0,0, .85))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-image: -o-linear-gradient(left, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
+    #contactus {    
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .65)),to(rgba(0,0,0, .65))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-image: -o-linear-gradient(left, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover; 
+    }
 
+    #footer {         
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .9)),to(rgba(0,0,0, .9))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-image: -o-linear-gradient(left, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
+    .mobile-info {
+        display: block !important;
+    }
 
+    .mobile-info a:link {
+        color: #d5d05b;
+       }
+     
+    .mobile-info a:hover {
+        color: #D5DF08;
+    }
+    
+    .desktop-info {
+        display: none !important;
+    }
 
-
-
-
-
-
-
-
+    .footer-facebook {
+        display: none !important;
+    }
 
     #blog .entry-title {
         font-size: 24px !important;
@@ -364,16 +502,8 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.ac
         line-height: 1.5 !important;
     }
 
-    .desktop-script {
-        display: none !important;
-    }
-
     #offers {
         margin-top: 50px !important;
-    }
-
-    .home-slider {
-        display: none !important;
     }
 
     #footer h4 {
@@ -388,6 +518,11 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top li.ac
     .sideMenu {
         top: 61px !important;
         max-width: 60% !important;
+    }
+
+    #blog-bg #sidebar > .sb-widget:first-child .sb-header,
+    #page-bg #sidebar > .sb-widget:first-child .sb-header {
+        text-align: center !important;
     }
 
     .sb-header {

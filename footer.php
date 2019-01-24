@@ -10,7 +10,7 @@
  */
 
 ?>
-               	<section id="contactus" class="hideme">
+               	<section id="contactus">
                     <!--Get In Touch-->
                     <div class="container">
                         <div class="row">
@@ -36,8 +36,8 @@
                     </div><!--container-->
                 </section> 
                             
-                <section id="location" class="hideme">
-                    <h1 class="hideme">Our Location</h1>                   
+                <section id="location">
+                    <h1>Our Location</h1>                   
                     <div id="map"></div>
                 </section>
                 <!--## END OF SECTIONS ##-->                
@@ -100,7 +100,7 @@
                                                             <?php if ( has_post_thumbnail() ) {
                                                                     the_post_thumbnail();
                                                                 } else { ?>
-                                                                    <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/st-clare-building.jpg" alt="<?php the_title(); ?>" />
+                                                                    <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/st-clare-building-recent.jpg" alt="<?php the_title(); ?>" />
                                                             <?php } ?>
                                                         </a>
                                                         </figure>
@@ -124,7 +124,7 @@
                                 </div><!--container-->                                              
                             </div><!--col-lg-4-->
 
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-facebook"> 
                                 <div class="container-fluid">
                                     <div class="row">
                                         <h4><i class="far fa-thumbs-up"></i>&nbsp;&nbsp; Like Us on Facebook</h4>
@@ -179,7 +179,7 @@
                 .script('https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js')
                 .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/sidebarNavigation.js')
                 .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/navigation.js')
-                .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/lib/fadeInScroll.js')
+                // .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/lib/fadeInScroll.js')
                 .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/lib/jquery.parallax.js')
                 .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/lib/jquery.isotope.js')
                 .script('http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/js/lib/fontsmoothie.js') 

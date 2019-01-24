@@ -4,6 +4,8 @@ inc/
 backup-php/
 layouts/
 sass/
+exclude/
+css/images/backup
 
 # files
 backup.txt
@@ -14,7 +16,4 @@ package.json
 phpcs.xml.dist
 readme.txt
 rtl.css
-section-WHO-ARE-WE-and-TESTIMONIAL.txt
 sjsmwebsite accounts.docx
-old_wp_bootstrap_navwalker.php
-wp_bootstrap_navwalker.php

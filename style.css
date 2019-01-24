@@ -90,11 +90,12 @@
   }
 
   h3 {
-    color:#41191A ;
+    color:#745758;
   }
 
-  a:hover, a:visited, a:active
-  {
+  a:hover, 
+  a:active, 
+  a:visited {
     text-decoration: none;
   }
 
@@ -444,10 +445,11 @@
     padding: 30px 0px;   
     position: relative;    
     
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .8)),to(rgba(0,0,0, .8))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
-    background-image: -o-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
-    background-image: linear-gradient(to right, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(241, 127, 127, 0.85)),to(rgba(0,0,0, .85))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: -o-linear-gradient(left, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, .85) 0%,rgba(0,0,0, .85) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-francis-building.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
   }
@@ -460,6 +462,23 @@
   #about .about-info
   {
     height: 365px;
+    overflow: hidden;
+  }
+
+  .mobile-info {
+    display: none;
+  }
+
+  .desktop-info {
+    display: inherit;
+  }
+
+  .desktop-info a:link {
+   color: #d5d05b;
+  }
+
+  .desktop-info a:hover {
+    color: #D5DF08;
   }
 
   .list-about-us 
@@ -842,10 +861,11 @@
     position: relative;
     color: white;
 
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .8)),to(rgba(0,0,0, .8))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
-    background-image: -o-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
-    background-image: linear-gradient(to right, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .65)),to(rgba(0,0,0, .65))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: -o-linear-gradient(left, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/contactus-bg.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 
@@ -1008,22 +1028,22 @@
     padding: 30px 0px;   
     position: relative;    
     
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .8)),to(rgba(0,0,0, .8))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
-    background-image: -o-linear-gradient(left, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
-    background-image: linear-gradient(to right, rgba(0,0,0, .8) 0%,rgba(0,0,0, .8) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0, .9)),to(rgba(0,0,0, .9))), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: -o-linear-gradient(left, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, .9) 0%,rgba(0,0,0, .9) 100%), url(http://sjsm.edu.ph/wp-content/themes/sjsmwebsiteV2/img/st-clare-building.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    
   }
   
-  #footer section 
-  {
+  #footer section {
     height: auto; /*100vh;*/
     /*height: 720px;*/
   }
 
-  #footer p 
-  {
+  #footer p {
     text-align: justify;
     color: grey;
     line-height: 1;
@@ -1091,7 +1111,7 @@
 
   .footer-post
   {
-    margin: 0;
+    margin: -13px 0 0 0;
     padding: 0;    
   }
   
@@ -1515,8 +1535,8 @@
 
   /* clear fix */
   .grid::after {
-    content: '';
-    display: block;
+    content: "";
+    display: table;
     clear: both;
   }
 
@@ -1585,7 +1605,7 @@
   }
 
   .button-group::after {
-    content: '';
+    content: "";
     display: block;
     clear: both;
   }
@@ -1776,7 +1796,9 @@
     box-shadow: 0 1px 1px 0 rgba(200,200,200,1);    
   }
 
-  
+  #page img {
+    margin: 0 auto !important;
+  }
 
 /* ==================== !THE PAGE ======================*/
 

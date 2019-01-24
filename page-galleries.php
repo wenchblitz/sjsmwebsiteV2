@@ -29,9 +29,8 @@ get_header();
 
                     <header class="entry-header">
                         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                    </header><!-- .entry-header -->
-                    
-                    <ul class="list-galleries">
+                    </header><!-- .entry-header --> 
+                    <ul class="list-galleries row">
                         <?php
                             $args = array(
                                 'depth' => 1,
@@ -45,7 +44,6 @@ get_header();
                             wp_list_pages($args);
                         ?>
                     </ul>
-
                 </div>
             </main><!-- #endRegion BLOG-->
 			

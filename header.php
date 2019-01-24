@@ -20,7 +20,7 @@
         <meta name="description" content="St. Joseph’s School of Mactan is an institution of learning, owned & administered by the Franciscan Sisters of the Immaculate Conception of the Holy Mother of God, Philippine South Province (SFIC-PSP) as a non-stock, non-profit corporation. It is an integral part of the SFIC">
         <meta name="keywords" content="http://sjsm.edu.ph, sjsm.edu.ph, sjsm, sjsofmactan, Catholic School, Religious School, Private School, St. Joseph's School of Mactan, St. Joseph, Josephian, SFIC, St. Francis, St. Francis of Assissi, Franciscan School, Franciscan Sisters, St. Joseph's School - Mactan, Mactan, Lapu-Lapu City, Acacia Road Mactan Lapu-Lapu City Cebu 6015, Editha Radam, Agnes V. Labitoria, mactan school, sjcqc">
 
-        <title>St. Joseph's School of Mactan.</title>
+        <title>St. Joseph's School of Mactan</title>
         
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!-- St. Joseph's School of Mactan Official Logo -->
         <link rel="profile" href="http://gmpg.org/xfn/11">
